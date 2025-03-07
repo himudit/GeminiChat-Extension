@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter API Key</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            width: 250px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 8px;
+            background-color: #8a2be2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        button:hover {
+            background-color: #9a49e7;
+        }
+    </style>
+</head>
+<body>
+    <h3>Set Your API Key</h3>
+    <input type="text" id="apiKeyInput" placeholder="Enter API Key">
+    <button id="saveKey">Save API Key</button>
+    <button id="clearKey" style="background-color: red;">Clear API Key</button>
+    <p id="status" style="color: green;"></p>
+
+    <script src="popup.js"></script>
+</body>
+</html>

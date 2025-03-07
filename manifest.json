@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Maang Problems Helper",
+  "version": "1.1",
+  "description": "Adds a button to Maang Problems page to show additional info.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://maang.in/problems/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://maang.in/problems/*"],
+      "exclude_matches": ["https://maang.in/problems"],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Open Helper"
+  }
+}
